@@ -1,0 +1,35 @@
+.Devices {
+    text-align: center;
+  }
+
+.card {
+    text-align: center;
+    display:inline-block;
+    padding: 1%;
+}
+
+.card-body {
+    border:1px solid black;
+    margin: 1em;
+    padding: 2em;
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+.button-on {
+    margin-right: 2%;
+}
+
+.button-off {
+    margin-left: 3%;
+}
+
+.button-toggle {
+    margin-top: 5%;
+    width: 60%;
+}
