@@ -1,35 +1,205 @@
 .Devices {
     text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    font-size: calc(8px + 2vmin);
+    color: white;
+    cursor: default;
   }
 
-.card {
+.main-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-holder {
     text-align: center;
     display:inline-block;
     padding: 1%;
+    vertical-align: text-top;
+}
+
+.leader-title {
+    margin: 0;
+    padding-bottom: 0.4em;
+    font-size: 0.7em;
+}
+
+.follower-title {
+    margin: 0;
+    padding-bottom: 0.4em;
+    font-size: 0.7em;
+    overflow: hidden;
+}
+
+.config-leader-title {
+    margin: 0;
+    padding-bottom: 0em;
+    font-size: 0.7em;
+}
+
+.config-follower-title {
+    margin: 0;
+    padding-bottom: 0em;
+    font-size: 0.7em;
+    overflow: hidden;
 }
 
 .card-body {
     border:1px solid black;
     margin: 1em;
     padding: 2em;
+    padding-top: 0;
+    background-color:  #42596e;
+    width: 6em;
+    height: 8.5em;
 }
 
-.card-title {
+.config-card-body {
+    border:1px solid black;
+    margin: 1em;
+    padding: 1em;
+    padding-top: 0;
+    background-color:  #42596e;
+    width: 8em;
+    height: 9.5em;
+}
+
+.card-id {
     margin-top: 0;
     margin-bottom: 0;
+    width: 100%;
+}
 
+.button-holder {
+    max-height: 0;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.button {
+    margin: 2%;
+    width: 45%;
+    height: 2em;
+}
+
+.editable-title-holder {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+    width: 100%;
+}
+.config-main-title {
+    margin: 0;
+    width: 100%;
+    font-size: 0.6em;
+}
+
+.editable-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    cursor: text;
+}
+
+.editable-title:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    cursor: text;
+    color: #E5E5E5;
+}
+
+.editing-title {
+    margin: 0;
+    width: 95%;
+    cursor: text;
+    font-size: 1em;
+
+    font-weight: bolder;
+}
+
+.editing-form {
+    margin: 0;
+    width: 5em;
 }
 
 
-.button-on {
-    margin-right: 2%;
+
+/* Icons */
+.edit-icon {
+    font-size: 0.6em;
+    text-align: center;
+    margin: auto;
+    cursor: text;
 }
 
-.button-off {
-    margin-left: 3%;
+.done-icon {
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    
+}
+.done-icon:hover {
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    color: #E5E5E5;
 }
 
-.button-toggle {
-    margin-top: 5%;
-    width: 60%;
+.power-on-icon {
+    vertical-align: text-bottom;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    margin-left: 0.1em;
+    color: green;
+}
+
+.power-off-icon {
+    vertical-align: text-bottom;
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    margin-left: 0.1em;
+    color: red;
+}
+
+.config-title {
+    vertical-align: text-bottom;
+    font-size: 0.5em;
+    margin: -0.6em;
+    margin-top: 0.5em;
+    margin-bottom: -1.1em;
+    padding-left: 0.8em;
+    text-align: left;
+}
+
+.config-box {
+    margin: 0;
+    width: 95%;
+    cursor: text;
+    font-size: 0.5em;
+
+    font-weight: bolder;
+}
+
+
+/* Offline */
+.offline-title {
+    margin-top: 3.1em;
+    margin-bottom: 0;
+    width: 100%;
+    cursor: text;
+}
+
+.offline-config-padding {
+    margin: 0;
+    padding-bottom: 0em;
+    font-size: 0.5em;
+    overflow: hidden;
 }
