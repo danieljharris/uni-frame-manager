@@ -26,8 +26,7 @@ class LoadDevices extends React.Component {
   }
 
   componentDidMount() {
-    // fetch('http://UniFrame.local:235/devices')
-    fetch('http://79.67.44.40:235/devices')
+    fetch('http://UniFrame.local:235/devices')
     .then(res => res.json())
     .then((online) => {
       this.setState({ devices: online.devices });
@@ -48,8 +47,7 @@ class LoadDevices extends React.Component {
   }
 
   handleClickRefresh() {
-    // fetch('http://UniFrame.local:235/devices')
-    fetch('http://79.67.44.40:235/devices')
+    fetch('http://UniFrame.local:235/devices')
     .then(res => res.json())
     .then((online) => {
       this.setState({ devices: online.devices });
@@ -85,8 +83,7 @@ class LoadDevices extends React.Component {
 
     const device = newDevices[index];
 
-    // fetch('http://UniFrame.local:235/name', 
-    fetch('http://79.67.44.40:235/name', 
+    fetch('http://UniFrame.local:235/name', 
     {
       method: 'POST',
       body: JSON.stringify({
@@ -104,8 +101,7 @@ class LoadDevices extends React.Component {
   }
 
   handleClickSet(device_id, action) {
-    // fetch('http://UniFrame.local:235/device?id=' + device_id, 
-    fetch('http://79.67.44.40:235/device?id=' + device_id, 
+    fetch('http://UniFrame.local:235/device?id=' + device_id, 
     {
       method: 'POST',
       body: JSON.stringify({
@@ -117,8 +113,7 @@ class LoadDevices extends React.Component {
   }
 
   handleClickToggle(device_id) {
-    // fetch('http://UniFrame.local:235/device?id=' + device_id, 
-    fetch('http://79.67.44.40:235/device?id=' + device_id, 
+    fetch('http://UniFrame.local:235/device?id=' + device_id, 
     {
       method: 'POST',
       body: JSON.stringify({
@@ -129,8 +124,7 @@ class LoadDevices extends React.Component {
   }
 
   handleConfigClick(device_id, index) {
-    // fetch('http://UniFrame.local:235/connected?id=' + device_id)
-    fetch('http://79.67.44.40:235/connected?id=' + device_id)
+    fetch('http://UniFrame.local:235/connected?id=' + device_id)
     .then(res => res.json())
     .then((data) => {
       const newDevices = this.state.devices.slice();
@@ -170,8 +164,7 @@ class LoadDevices extends React.Component {
     newDevices[index].config = "";
     this.setState({devices: newDevices});
     
-    // fetch('http://UniFrame.local:235/connected?id=' + device_id, 
-    fetch('http://79.67.44.40:235/connected?id=' + device_id, 
+    fetch('http://UniFrame.local:235/connected?id=' + device_id, 
     {
       method: 'POST',
       body: JSON.stringify({
